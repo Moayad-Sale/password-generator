@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #16111a;
+}
+
+.container p{
+    display: flex;
+    justify-content: center;
+    background-color: #16111a;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.container-two {
+    background-color: #2d2039;
+    color: white;
+    width: 350px;
+    height: 350px;
+    padding: 8px 15px;
+}
+
+.input-box{
+    position: relative;
+    background-color: #2d2039;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 65px;
+
+}
+
+.input-value{
+    width: 100%;
+    height: 65px;
+    color: white;
+    background: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.7px;
+    padding: 5px 45px 0px 16px;
+    border: none;
+}
+
+.material-symbols-rounded{
+    position: absolute;
+    right: 13px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.pass-indicator{
+    width: 100%;
+    height: 4px;
+    position: relative;
+    background: white;
+    margin-top: 12px;
+    border-radius: 25px;
+}
+
+.pass-indicator::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    transition: width 0.3s ease;
+}
+
+.pass-indicator#weak::before{
+    width: 20%;
+    background: #E64A4A;
+}
+
+.pass-indicator#medium::before{
+    width: 50%;
+    background: #ffa257;
+}
+
+.pass-indicator#strong::before{
+    width: 100%;
+    background: #4abea0;
+}
+
+.title {
+    margin-bottom: 5px;
+}
+
+.pass-length{
+    margin: 25px 6px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-pass-length{
+    width: 100%;
+    height: 5px;
+}
+
+.options{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.option{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+
+}
+
+.option input{
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.option label{
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.generate-btn{
+    width: 100%;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: #a638f6;
+    height: 54px;
+    margin-top: 20px;
+}
+
+.techover {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#uppercase {
+    accent-color: #a638f6;
+}
+
+#lowercase {
+    accent-color: #a638f6;
+}
+
+#numbers{
+    accent-color: #a638f6;
+}
+
+#symbols {
+    accent-color: #a638f6;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" sizes="32x32" href="./assets/images/techover.ico" />
+  <link rel="icon" sizes="32x32" href="./assets/images/techover.ico" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <title>Lösenords Generator</title>
+</head>
+<body>
+  <div class="container">
+    <p>Password Generator</p>
+    <div class="wrapper">
+      <div class="input-box">
+        <input class="input-value" type="text" disabled>
+        <span class="material-symbols-rounded"> <img src="/images/copy-icon.svg" alt=""></span>
+      </div> 
+      <div class="container-two">
+        <div class="pass-length">
+          <div class="details">
+            <label class="title">Password Length</label>
+            <span></span>
+          </div>
+          <input class="input-pass-length" type="range" min="1" max="20" value="15" step="1">
+        </div>
+        <div class="pass-settings">
+          <ul class="options">
+            <li class="option">
+              <input type="checkbox" id="uppercase">
+              <label for="uppercase">Include Uppercase Letters</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="lowercase" checked>
+              <label for="lowercase">Include Lowercase Letters</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="numbers" checked>
+              <label for="numbers">Include Numbers</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="symbols">
+              <label for="symbols">Include Symbols</label>
+            </li>
+          </ul>
+        </div>
+        <div class="pass-indicator"></div>
+        <button class="generate-btn">Generate</button>
+      </div>
+    </div>
+    <img class="techover" src="/images/techover-logo.png" alt="Techover Logo" />
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
